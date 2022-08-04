@@ -1,0 +1,52 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    background-color: rgba(25, 20, 30, 1);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    max-width: 500px;
+
+    background-color: rgba(70, 70, 70, 0.8);
+
+    border-radius: 12px;
+}
+
+.screen {
+    padding: 1em 1em;
+    margin: 1em;
+
+    background-color: white;
+
+    text-align: end;
+    font-size: 1.25rem;
+
+    border-radius: 8px;
+}
+
+.buttons {
+    margin: 1em;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.key {
+    padding: 1em .75em;
+
+    border-radius: 0;
+
+    background-color: white;
+}
