@@ -17,39 +17,42 @@
     <main class="main-container">
 
         <div class="screen">
-            0
+            <div id="entryScreen"></div>
+            <div id="resultScreen">0</div>
         </div>
 
         <div class="buttons">
 
-            <button id="(" class="key">(</button>
-            <button id=")" class="key">)</button>
-            <button id="reset" class="key"><i class="fa-solid fa-c"></i><i class="fa-solid fa-e"></i></button>
-            <button id="" class="key"><i class="fa-solid fa-divide"></i></button>
+            <button id="(" class="key" onclick="pressKey(this)">(</button>
+            <button id=")" class="key" onclick="pressKey(this)">)</button>
+            <button id="reset" class="key" onclick="reset()"><i class="fa-solid fa-c"></i><i class="fa-solid fa-e"></i></button>
+            <button id="/" class="key" onclick="pressKey(this)"><i class="fa-solid fa-divide"></i></button>
 
-            <button id="7" class="key"><i class="fa-solid fa-7"></i></button>
-            <button id="8" class="key"><i class="fa-solid fa-8"></i></button>
-            <button id="9" class="key"><i class="fa-solid fa-9"></i></button>
-            <button id="*" class="key"><i class="fa-solid fa-xmark"></i></button>
+            <button id="7" class="key" onclick="pressKey(this)"><i class="fa-solid fa-7"></i></button>
+            <button id="8" class="key" onclick="pressKey(this)"><i class="fa-solid fa-8"></i></button>
+            <button id="9" class="key" onclick="pressKey(this)"><i class="fa-solid fa-9"></i></button>
+            <button id="*" class="key" onclick="pressKey(this)"><i class="fa-solid fa-xmark"></i></button>
 
-            <button id="4" class="key"><i class="fa-solid fa-4"></i></button>
-            <button id="5" class="key"><i class="fa-solid fa-5"></i></button>
-            <button id="6" class="key"><i class="fa-solid fa-6"></i></button>
-            <button id="-" class="key"><i class="fa-solid fa-minus"></i></button>
+            <button id="4" class="key" onclick="pressKey(this)"><i class="fa-solid fa-4"></i></button>
+            <button id="5" class="key" onclick="pressKey(this)"><i class="fa-solid fa-5"></i></button>
+            <button id="6" class="key" onclick="pressKey(this)"><i class="fa-solid fa-6"></i></button>
+            <button id="-" class="key" onclick="pressKey(this)"><i class="fa-solid fa-minus"></i></button>
 
-            <button id="1" class="key"><i class="fa-solid fa-1"></i></button>
-            <button id="2" class="key"><i class="fa-solid fa-2"></i></button>
-            <button id="3" class="key"><i class="fa-solid fa-3"></i></button>
-            <button id="+" class="key"><i class="fa-solid fa-plus"></i></button>
+            <button id="1" class="key" onclick="pressKey(this)"><i class="fa-solid fa-1"></i></button>
+            <button id="2" class="key" onclick="pressKey(this)"><i class="fa-solid fa-2"></i></button>
+            <button id="3" class="key" onclick="pressKey(this)"><i class="fa-solid fa-3"></i></button>
+            <button id="+" class="key" onclick="pressKey(this)"><i class="fa-solid fa-plus"></i></button>
 
-            <button id="invert" class="key"><i class="fa-solid fa-plus"></i>/<i class="fa-solid fa-minus"></i></button>
-            <button id="0" class="key"><i class="fa-solid fa-0"></i></button>
-            <button id="." class="key"><i class="fa-solid fa-circle"></i></button>
-            <button id="calc" class="key"><i class="fa-solid fa-equals"></i></button>
+            <button id="delete" class="key" onclick="deleteBack()"><i class="fa-solid fa-delete-left"></i></button>
+            <button id="0" class="key" onclick="pressKey(this)"><i class="fa-solid fa-0"></i></button>
+            <button id="." class="key" onclick="pressKey(this)">.</button>
+            <button id="calc" class="key" onclick="calc()"><i class="fa-solid fa-equals"></i></button>
 
         </div>
 
     </main>
 
+
+    <script src="./app.js"></script>
 </body>
 </html>

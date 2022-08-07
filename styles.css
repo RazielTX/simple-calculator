@@ -20,7 +20,7 @@ body {
 
 .screen {
     padding: 1em 1em;
-    margin: 1em;
+    margin: 20px;
 
     background-color: white;
 
@@ -30,13 +30,20 @@ body {
     border-radius: 8px;
 }
 
+.screen div:nth-child(1) {
+    min-height: 2rem;
+
+    border-bottom: 1px solid;
+    
+    color: rgba(100, 100, 100, 1);
+}
+
 .buttons {
-    margin: 1em;
+    margin: 20px;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    gap: 0;
 
     border-radius: 8px;
 
@@ -46,7 +53,23 @@ body {
 .key {
     padding: 1em .75em;
 
+    border: none;
     border-radius: 0;
 
     background-color: white;
+
+    transition: background .3s;
+    outline: none;
+}
+
+.key:hover {
+    background-color: rgba(200, 200, 200, 1);
+}
+
+.key:active {
+    background-color: black;
+}
+
+.key:active {
+    background-color: rgba(100, 100, 100, 1);
 }
